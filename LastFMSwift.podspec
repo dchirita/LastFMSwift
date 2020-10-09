@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LastFMSwift'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Last.fm API wrapper.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   It is now used for fetching artist info. Should it be needed/request more support will be added.
                        DESC
 
-  s.homepage         = 'https://github.com/dv.chirita@gmail.com/LastFMSwift'
+  s.homepage         = 'https://github.com/dchirita/LastFMSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dv.chirita@gmail.com' => 'dv.chirita@gmail.com' }
-  s.source           = { :git => 'https://github.com/dv.chirita@gmail.com/LastFMSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dchirita/LastFMSwift', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
