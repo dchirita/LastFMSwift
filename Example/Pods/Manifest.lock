@@ -1,5 +1,5 @@
 PODS:
-  - LastFMSwift (0.1.0)
+  - LastFMSwift (0.1.1)
   - Nimble (7.3.4)
   - Quick (1.2.0)
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LastFMSwift: 3e5e25ef845d003ab8f0fec829baf8d2668d7f2b
+  LastFMSwift: 3748f0a8f1234edd7edde5c38cfab2a8233041f6
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
-PODFILE CHECKSUM: f62d2fb1118604a837da53d59c94488f4d18769e
+PODFILE CHECKSUM: 2612bdd04f1aa2e981a24c2718c3ea42bcb63e2c
 
 COCOAPODS: 1.8.4

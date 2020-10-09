@@ -1,9 +1,9 @@
 {
   "name": "LastFMSwift",
-  "version": "0.1.0",
-  "summary": "A short description of LastFMSwift.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/dv.chirita@gmail.com/LastFMSwift",
+  "version": "0.1.1",
+  "summary": "Last.fm API wrapper.",
+  "description": "It is now used for fetching artist info. Should it be needed/request more support will be added.",
+  "homepage": "https://github.com/dchirita/LastFMSwift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "dv.chirita@gmail.com": "dv.chirita@gmail.com"
   },
   "source": {
-    "git": "https://github.com/dv.chirita@gmail.com/LastFMSwift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/dchirita/LastFMSwift",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LastFMSwift/Classes/**/*"
+  "source_files": "LastFMSwift/Classes/**/*",
+  "swift_versions": "5.1.3"
 }
