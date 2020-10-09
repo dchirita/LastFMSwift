@@ -1,0 +1,22 @@
+{
+  "name": "LastFMSwift",
+  "version": "0.1.0",
+  "summary": "A short description of LastFMSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dv.chirita@gmail.com/LastFMSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dv.chirita@gmail.com": "dv.chirita@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dv.chirita@gmail.com/LastFMSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LastFMSwift/Classes/**/*"
+}

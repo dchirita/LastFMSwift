@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-d3-BhR">
+                                <rect key="frame" x="30" y="227" width="315" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKh-ip-KpR">
+                                <rect key="frame" x="158" y="167" width="59" height="30"/>
+                                <state key="normal" title="Get data"/>
+                                <connections>
+                                    <action selector="getDataButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eFf-dg-Xlm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k86-x3-Szn">
+                                <rect key="frame" x="30" y="69" width="315" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EcJ-d3-BhR" secondAttribute="trailing" constant="30" id="3hY-yN-m9H"/>
+                            <constraint firstItem="PKh-ip-KpR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9cl-ss-v83"/>
+                            <constraint firstAttribute="trailing" secondItem="k86-x3-Szn" secondAttribute="trailing" constant="30" id="B7w-iL-7tw"/>
+                            <constraint firstItem="EcJ-d3-BhR" firstAttribute="top" secondItem="PKh-ip-KpR" secondAttribute="bottom" constant="30" id="JzT-Kk-peU"/>
+                            <constraint firstItem="EcJ-d3-BhR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MkJ-xy-fjc"/>
+                            <constraint firstItem="k86-x3-Szn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="69" id="bRU-Ab-UfG"/>
+                            <constraint firstItem="k86-x3-Szn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="30" id="fg2-9B-JHF"/>
+                            <constraint firstItem="PKh-ip-KpR" firstAttribute="top" secondItem="k86-x3-Szn" secondAttribute="bottom" constant="64" id="k9U-K3-dC0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EcJ-d3-BhR" secondAttribute="bottom" constant="10" id="qgh-5h-Bja"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="artistNameTextField" destination="k86-x3-Szn" id="BJz-rY-O3e"/>
+                        <outlet property="resultLabel" destination="EcJ-d3-BhR" id="gr9-oZ-pgq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="88"/>
         </scene>
     </scenes>
 </document>

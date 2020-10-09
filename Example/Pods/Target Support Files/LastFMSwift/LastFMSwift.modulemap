@@ -1,0 +1,6 @@
+framework module LastFMSwift {
+  umbrella header "LastFMSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
